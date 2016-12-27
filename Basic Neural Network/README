@@ -1,0 +1,36 @@
+README
+======
+
+Basic Neural Network
+
+-----------------------------------------------
+Welcome to Lou's Neural Network! The files in this folder are used to create a generic backpropagation neural network that can be used to model the relationship between a dataset of inputs and outputs. 
+-----------------------------------------------
+
+Usage
+-----
+Compile all Java files in the Basic Neural Network folder:
+	javac *.java
+
+Use the Driver to run each different test (KFold or Survey) or to serialize a collection of neural networks to be used later:
+	java Driver
+
+If any changes are made to any source files (in order to run different tests or to change parameters) make sure to recompile!
+
+Notes on Datasets
+-----------------
+Any dataset can be transformed into an array of usable objects (IOTuple) for this neural network framework by using the DataParser. The data must be pre-formatted like so:
+
+Input, Input, Input,...
+Output
+Input, Input, Input,...
+Output
+Input, Input, Input,...
+Output
+Input, Input, Input,...
+Output
+etc.
+
+One Final Note - For the Computational Chemist
+----------------------------------------------
+The pybelData.txt was created using a programming package called Cinfony. The collection of input parameters was created using a dataset [Zhao, 2012] and a function from Cinfony: calcfp(). From what I understand this creates a molecular fingerprint from a molecule given a chemical structure (input as a SMILES string). If anyone knows the inner workings behind calcfp() or any Cinfony function please let me know! It would be of great value. 

@@ -1,0 +1,22 @@
+README
+======
+
+Genetic Optimization
+
+-----------------------------------------------
+Welcome to Lou's Neural Network Genetic Algorithm Optimization! The files in this folder are used to optimize the "baked-in" parameters used in the Basic Neural Network. 
+-----------------------------------------------
+
+Usage
+-----
+Compile all Java files in the Genetic Optimization folder:
+	javac *.java
+
+Use the Driver to optimize the learning rate, momentum, and hidden node ratio of a population of neural networks. Take the values displayed on the terminal and copy them over into the Basic Neural Network and see if there are any optimizations!
+	java Driver
+
+Remember to always recompile if any changes are made!
+
+Notes on Schemas, Crossover, and Mutation
+-----------------------------------------
+The Schema of a neural network represents the chromosome in a genetic algorithm. The Schema holds all of the important parameter information for a neural network. Crossover and mutation are therefore defined in regards to crossing over only parameters, not (for example) the individual edges contained in a neural network. It may be more successful to redefine these three pieces in order to improve the performance of the genetic algorithm.
